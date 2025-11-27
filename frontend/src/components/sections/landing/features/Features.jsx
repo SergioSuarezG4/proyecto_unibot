@@ -23,7 +23,7 @@ const Features = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-muted">
       <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-16">
+        <div className="text-center mb-16 mt-6">
           <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4 text-balance">
             Funcionalidades Principales
           </h2>
