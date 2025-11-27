@@ -1,25 +1,26 @@
 const Hero = () => {
   return (
-    <section className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-6xl mx-auto">
+     <section id="home" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 mb-20">
+      <div className="max-w-6xl mx-auto mt-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
-          <div className="flex flex-col justify-center h-full -translate-y-6 ">
+          {/* Content */}
+          <div className="space-y-6 me-20">
             <h1 className="text-5xl sm:text-6xl font-bold text-foreground leading-tight text-balance">
               Tu asistente universitario con IA
             </h1>
-            <p className="text-lg text-muted-foreground max-w-lg mt-3">
-              Pregunta sobre salones, edificios, procesos academicos y recibe respuestas al instante. Disponible 24/7 para ayudarte con toda la informacion 
-              que necesites
+            <p className="text-lg text-muted-foreground leading-relaxed max-w-lg">
+              Pregunta sobre salones, edificios, procesos académicos y recibe respuestas al instante. Disponible 24/7
+              para ayudarte con toda la información que necesites.
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-7">
-              <button className="flex items-center gap-2 px-6 py-3 bg-primary hover:bg-teal-300 text-white rounded-lg font-medium shadow-md">
-                Hablar con el ChatBOT
-              </button>
+            <div className="flex flex-col sm:flex-row gap-4 pt-2">
+              <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg transition-colors font-semibold shadow-sm hover:shadow-md w-full sm:w-auto">
+                  Hablar con el Chatbot
+                </button>
             </div>
           </div>
 
           <div
-            className="w-[400px] h-[380px] bg-white rounded-2xl shadow-md border border-gray-200 flex flex-col items-center justify-center text-center 
+            className="w-[400px] h-[380px] bg-muted rounded-2xl shadow-md border border-gray-200 flex flex-col items-center justify-center text-center 
     hover:shadow-lg transition"
           >
             <div className="w-24 h-24 bg-teal-400 flex items-center justify-center rounded-full" />
