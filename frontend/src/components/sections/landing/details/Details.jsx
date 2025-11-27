@@ -20,7 +20,7 @@ const steps = [
 ]
 const Details = () => {
     return (
-        <section className="py-20 px-4 sm:px-6 lg:px-8 bg-background">
+        <section className="py-20 sm:py-28 px-4 sm:px-6 lg:px-8 bg-gradient-to-br from-background via-card to-muted">
             <div className="max-w-6xl mx-auto">
                 <div className="text-center mb-16">
                     <h2 className="text-4xl sm:text-5xl font-bold text-foreground mb-4 text-balance">Como Funciona</h2>
