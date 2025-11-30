@@ -1,5 +1,5 @@
 import { NavLink } from "react-router";
-import { X, LogOut, Menu } from "lucide-react";
+import { X, LogOut, ArrowLeftFromLine  } from "lucide-react";
 import Logo from "../ui/Logo";
 const Sidebar = ({ open, onClose }) => {
   return (
@@ -11,8 +11,6 @@ const Sidebar = ({ open, onClose }) => {
           ${open ? "translate-x-0" : "-translate-x-full md:translate-x-0"}`}
       >
         <div className="h-full flex flex-col p-4">
-
-          {/* Header */}
           <div className="flex items-center justify-between mb-6">
             <NavLink href="/">
               <div className="flex items-center gap-2 hover:opacity-80 transition-opacity">
@@ -28,19 +26,13 @@ const Sidebar = ({ open, onClose }) => {
             </button>
           </div>
 
-          {/* New Chat */}
-          <button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground 
-                           py-2 px-4 rounded-lg font-medium text-sm mb-6 shadow-sm">
-            + Nuevo Chat
-          </button>
-
           {/* Logout */}
           <NavLink to="/">
             <button className="w-full flex items-center justify-center gap-2 border-t 
                                border-border pt-4 text-muted-foreground hover:text-foreground 
                                transition-colors text-sm font-medium">
-              <LogOut size={18} />
-              Cerrar sesión
+              <ArrowLeftFromLine size={18} />
+              Volver.
             </button>
           </NavLink>
         </div>

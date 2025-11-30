@@ -1,3 +1,6 @@
+import { NavLink } from "react-router";
+import { MessageSquareMore } from 'lucide-react';
+
 const Hero = () => {
   return (
      <section id="home" className="py-20 sm:py-32 px-4 sm:px-6 lg:px-8 mb-20">
@@ -13,9 +16,11 @@ const Hero = () => {
               para ayudarte con toda la información que necesites.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-2">
-              <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg transition-colors font-semibold shadow-sm hover:shadow-md w-full sm:w-auto">
+              <NavLink to="/chat">
+                <button className="bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-3 rounded-lg transition-colors font-semibold shadow-sm hover:shadow-md w-full sm:w-auto">
                   Hablar con el Chatbot
                 </button>
+              </NavLink>
             </div>
           </div>
 
@@ -24,7 +29,7 @@ const Hero = () => {
     hover:shadow-lg transition"
           >
             <div className="w-24 h-24 bg-teal-400 flex items-center justify-center rounded-full" />
-
+            <MessageSquareMore/>
             <h3 className="mt-6 text-xl font-semibold text-gray-800">
               Asistencia Inteligente 24/7
             </h3>

@@ -3,7 +3,7 @@ import Logo from "../../ui/Logo";
 
 export function Footer() {
   return (
-    <footer className="bg-[#1a2a29] text-[#a8c8c5] py-16 px-4 sm:px-6 lg:px-8">
+    <footer id="contacto"className="bg-[#1a2a29] text-[#a8c8c5] py-16 px-4 sm:px-6 lg:px-8">
       <div className="max-w-6xl mx-auto">
         <div className="grid md:grid-cols-3 gap-12 mb-12">
           {/* Información y Logo */}
@@ -12,7 +12,7 @@ export function Footer() {
             <p className="text-sm leading-relaxed mt-4">
               Plataforma académica creada por{" "}
               <span className="font-bold">
-                Sergio Suárez y Sebastian Suárez
+                Sergio Suárez y Sebastian Suárez, Juan Jose Arias
               </span>
               . Asistencia inteligente para estudiantes universitarios.
             </p>
@@ -46,7 +46,7 @@ export function Footer() {
               </li>
               <li className="flex items-center gap-2">
                 <Phone size={16} className="text-primary" />
-                <span>+57 314 838 7013</span>
+                <span>+57 315 567 9452</span>
               </li>
               <li className="flex items-center gap-2">
                 <MapPin size={16} className="text-primary" />

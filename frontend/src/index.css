@@ -1,6 +1,11 @@
 @import "tailwindcss";
 @import "tw-animate-css";
 
+/*Scroll de los navbar*/
+html {
+  scroll-behavior: smooth;
+}
+
 /* ============================================================
    VARIABLES DEL PROYECTO (COLORES BASE)
    ============================================================ */

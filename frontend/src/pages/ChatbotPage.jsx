@@ -15,10 +15,6 @@ export default function ChatPage() {
       id: "1",
       type: "bot",
       content: "¡Hola! Soy UniBot. ¿En qué puedo ayudarte hoy?",
-      time: new Date().toLocaleTimeString("es-ES", {
-        hour: "2-digit",
-        minute: "2-digit",
-      }),
     },
   ]);
 
@@ -42,10 +38,6 @@ export default function ChatPage() {
       id: Date.now(),
       type: "user",
       content: inputValue,
-      time: new Date().toLocaleTimeString("es-ES", {
-        hour: "2-digit",
-        minute: "2-digit",
-      }),
     };
 
     setMessages((prev) => [...prev, userMsg]);
@@ -54,7 +46,7 @@ export default function ChatPage() {
     setInputValue("");
     setIsLoading(true);
 
-    // Llamada real al backend
+    // Llamada al backend
     const botReply = await sendMessage(textToSend);
 
     // Mensaje del bot
@@ -62,10 +54,6 @@ export default function ChatPage() {
       id: Date.now() + 1,
       type: "bot",
       content: botReply,
-      time: new Date().toLocaleTimeString("es-ES", {
-        hour: "2-digit",
-        minute: "2-digit",
-      }),
     };
 
     setMessages((prev) => [...prev, botMsg]);
